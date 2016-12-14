@@ -120,6 +120,11 @@ class Httpd24 < Formula
     <dict>
       <key>Label</key>
       <string>#{plist_name}</string>
+      <key>EnvironmentVariables</key>
+      <dict>
+        <key>PATH</key>
+        <string>/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin</string>
+      </dict>
       <key>ProgramArguments</key>
       <array>
         <string>#{opt_bin}/httpd</string>
